@@ -54,6 +54,7 @@ h1, h2 {
   position: relative;
   top: -75px;
   z-index: inherit;
+  /* box-shadow: 5px 5px 5px 5px #888; */
 }
 
 /**************************************SECTIONS STYLES**********************************************************************************/
@@ -184,12 +185,16 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.8rem;
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 
 .boat-manufac img {
   width: 80%;
   margin-bottom: 50px;
+}
+
+.boat-manufac .two-col-element img {
+  width: 100%;
 }
 
 
@@ -548,7 +553,15 @@ footer ul {
     font-size: 1.2rem;
   }
 
+  .boat-manufac .two-col-element {
+    margin-top: 50px;
+  }
+
   /*Featured towers********************************/
+  .featured-tower {
+    margin-top: 200px;
+  }
+
   .featured-tower h2 {
     font-size: 2rem;
   }
@@ -567,6 +580,11 @@ footer ul {
   }
 
   /*Featured universal towers**************************/
+  .featured-universal-tower {
+    margin-top: 100px;
+  }
+
+
   .featured-universal-tower h2 {
     font-size: 2rem;
     padding: 0 20px;
@@ -586,6 +604,10 @@ footer ul {
   }
 
   /*Biminis section******************************/
+  .biminis {
+    margin-top: 200px;
+  }
+
 
   .logo-sunbrella img {
     width: 50%;
@@ -714,11 +736,26 @@ footer ul {
     padding: 50px 40px 0 40px;
   }
 
+   /*Header image section*********************************************/
+   .header-image img {
+     width: 75%;
+   }
+
   /*Showcase items*********************************************/
   .showcase h2 {
     font-size: 3.8rem;
     padding: 10px 40px;
     color: #333;
+  }
+
+  /*featured items***********************************************/
+  .boat-manufac .two-col-element {
+    margin-top: 100px;
+  }
+
+
+  .boat-manufac .two-col-element h2 {
+    font-size: 2rem;
   }
 
   /*featured items***********************************************/
@@ -759,42 +796,291 @@ footer ul {
 /******************************RULES FOR SCREEN WIDTHS OF 1224 OR GREATER*********************************************/
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
+  /*Universal styles for body**********************/
+  section {
+    padding: 0 40px;
+  }
+
   /*showcase section******************************/
+  .header-image img {
+    width: 80%;
+  }
+
+  /*showcase section******************************/
+  section.showcase {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
   .showcase h2 {
     font-size: 3.8rem;
     padding: 10px 40px;
   }
 
-  /*Boat manufac*******************/
+  .grid-item {
+    margin-bottom: 50px;
+    padding: 15px;
+  }
+
+  /*Featured tower**********************************/
+  .featured-tower {
+    padding: 50px 40px;
+  }
+
+  /*Boat manufac**********************************/
   .logo-item img {
     width: 60%;
   }
-/* Need to fix *****************************************************************/
-  /* .boat-manufac {
-    text-align: center;
-  }
-  
-  .boat-manufac .text {
-    width: 80%;
-    text-align: center;
-  } */
 
+  /*Bimini section*********************************/
+  .biminis .logo-sunbrella img {
+    width: 35%;
+  }
+
+  /*Accessories section*********************************/
+  .accessories {
+    padding: 50px 40px;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
 }
   
+
+
+
   /******************************RULES FOR SCREEN WIDTHS OF 1824 OR GREATER*********************************************/
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
 /* Styles */
+
+  section {
+    padding: 0 100px;
+  }
+
+  /*fullsize header*******************************/
+  .fullsize-background h1 {
+    font-size: 6rem;
+    padding: 60px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+
+  /*Header Img section******************************/
+  .header-image img {
+    width: 65%;
+  }
+
+
+  /*Showcase section******************************/
+  section.showcase {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .grid-item {
+    margin-bottom: 50px;
+    padding: 25px;
+  }
+
+
+  /*Boat manufacturers section******************************/
+  .boat-manufac .text {
+    padding: 50px 150px;
+  }
+
+  .boat-manufac .text p {
+    font-size: 1.4rem;
+  }
+
+  .boat-manufac .two-col-element h2 {
+    font-size: 3rem;
+  }
+
+  /*Featured tower section******************************/
+  .featured-tower img {
+    width: 75%;
+  }
+
+  .featured-tower h2 {
+    font-size: 3rem;
+  }
+
+  .featured-tower ul li {
+    font-size: 1.3rem;
+  }
+
+  .featured-tower button {
+    width: 50%;
+    margin-top: 50px;
+  }
+
+
+  /*featured universal tower section******************************/
+  .featured-universal-tower img {
+    width: 75%;
+  }
+
+  .featured-universal-tower h2 {
+    font-size: 3rem;
+  }
+
+  .featured-universal-tower ul li {
+    font-size: 1.3rem;
+  }
+
+  .featured-universal-tower button {
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  /*Biminis section******************************/
+  .biminis .logo-sunbrella {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .biminis .logo-sunbrella img {
+    width: 30%;
+  }
+
+  .biminis .logo-sunbrella p {
+    font-size: 1.4rem;
+  }
+
+  .biminis .left-content {
+    margin-top: 100px;
+  }
+
+  .biminis .left-content img {
+    width: 70%;
+  }
+
+  .biminis .left-content p {
+    font-size: 1.5rem;
+    margin-right: 100px;
+  }
+
+  .biminis .right-content {
+    margin-top: 100px;
+  }
+
+  .biminis .right-content h2 {
+    font-size: 4rem;
+  }
+
+  .biminis .right-content ul li {
+    font-size: 1.4rem;
+    padding: 5px;
+  }
+
+  .biminis .right-content img {
+    width: 70%;
+  }
+
+  /*Accessories section******************************/
+  .accessories {
+    margin-top: 200px;
+  }
+
+  .accessories .accessories-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .accessories h2 {
+    font-size: 3rem;
+  }
+
+  .accessories p {
+    font-size: 1.5rem;
+  }
+
+  .accessories .accessories-wrapper .container-fluid {
+    margin-top: 100px;
+  }
+
+  .accessories .left-content h2 {
+    font-size: 3rem;
+    text-align: justify;
+  }
+
+  .accessories .left-content ul li {
+    font-size: 1.4rem;
+  }
+
+  .accessories .left-content img {
+    width: 80%;
+  }
+
+  .accessories .accessories-wrapper .featured {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .accessories .accessories-wrapper .featured h3 {
+    font-size: 3rem;
+  }
+
+  .swiper-wrapper img {
+    width: 60%;
+  }
+
+  /*Footer section******************************/
+
+
+
 }
 
-  /******************************RULES FOR SCREEN WIDTHS OF 1920 OR GREATER*********************************************/
-/* Large screens ----------- */
-@media only screen  and (min-width : 1920px) {
-  /* Styles */
-  }
 
     /******************************RULES FOR SCREEN WIDTHS OF 2560 OR GREATER*********************************************/
 /*  Xtra Large screens ----------- */
-@media only screen  and (min-width : 2560px) {
+@media only screen  and (min-width : 2480px) {
   /* Styles */
+
+  /*fullsize header*******************************/
+  .fullsize-background h1 {
+    font-size: 6rem;
+    padding: 60px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+
+  /*showcase section******************************/
+  .header-image img {
+    width: 65%;
+  }
+
+  /*Featured section******************************/
+
+
+  /*Boat manufacturers section******************************/
+
+
+  /*Featured tower section******************************/
+
+
+  /*featured universal tower section******************************/
+
+
+  /*Biminis section******************************/
+
+
+  /*Accessories section******************************/
+
+
+  /*Footer section******************************/
+
+  
   }
