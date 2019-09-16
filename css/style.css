@@ -9,12 +9,18 @@ a {
     cursor: pointer;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #333;
+    max-width: 100%;
     overflow-x: hidden;
     background-color: #fdfffc;
     position: relative;
@@ -28,7 +34,7 @@ h1, h2 {
 
 .fullsize-background {
   width: 100%;
-  height: 400px; /*Changed from 400px*/
+  height: 400px; 
   background:linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../img/wake_splash.jpeg);
   background-size: cover;
   z-index: -1;
@@ -42,7 +48,7 @@ h1, h2 {
   line-height: 1.2;
   text-transform: uppercase;
   font-size: 2.5rem;
-  padding-top: 50px;
+  padding-top: 85px;
 }
 
 /************header tile image of mastercraft***********/
@@ -53,15 +59,13 @@ h1, h2 {
   width: 90%;
   position: relative;
   top: -75px;
-  z-index: inherit;
+  z-index: 5;
   /* box-shadow: 5px 5px 5px 5px #888; */
 }
 
 /**************************************SECTIONS STYLES**********************************************************************************/
 
-section {
-  width: 100%;
-}
+
 
 /***************************************************SHOWCASE****************************************************************************/
 .showcase {
@@ -85,7 +89,7 @@ section {
 }
 
 .grid-item img {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
   border-radius: 2px;
 }
@@ -102,10 +106,9 @@ section {
 }
 
 .grid-item button {
-  /* color: #fff; */
   border: solid 2px #993300;
   border-radius: 2px;
-  width: 100%;
+  width: 90%;
   padding: 10px 25px;
   text-transform: uppercase;
   background-color: transparent;
@@ -129,34 +132,38 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 10px 5px;
+  padding: 10px 40px;
 }
 
 /********************************************BANNER WITH STRIPE AND IMAGE*************************************************/
-.banner {
-  width: 100%;
+.banner_stripe {
+  width: 90%;
   text-align: center;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.banner img {
+.banner_stripe img {
   width: 120px;
   display: inline-block;
-  padding: 5px;
+  /* padding: 15px; */
 }
 
-.banner .left-stripe {
+.banner_stripe .left-stripe {
   width: 25%;
   height: 3px;
   background-color: #474A48;
   display: inline-block;
+  margin-right: 5px;
 }
 
-.banner .right-stripe {
+.banner_stripe .right-stripe {
   width: 25%;
   height: 3px;
   background-color: #474A48;
   display: inline-block;
+  margin-left: 5px;
 }
 
 /********************************************boat manufacturers*************************************************/
@@ -168,7 +175,7 @@ section {
 }
 
 .boat-logos {
-  width: 100%;
+  width: 90%;
   height: 100px;
   background-color: lightgray;
 }
@@ -194,7 +201,7 @@ section {
 }
 
 .boat-manufac .two-col-element img {
-  width: 100%;
+  width: 90%;
 }
 
 
@@ -225,7 +232,7 @@ section {
 }
 
 .featured-tower img {
-  width: 100%;
+  width: 90%;
 }
 
 .featured-tower button {
@@ -275,7 +282,7 @@ section {
 }
 
 .featured-universal-tower img {
-  width: 100%;
+  width: 90%;
 }
 
 .featured-universal-tower button {
@@ -301,6 +308,10 @@ section {
   position: relative;
 }
 
+.biminis .row {
+  margin: 0;
+}
+
 .biminis .left-content {
   padding-bottom: 50px;
 }
@@ -311,7 +322,7 @@ section {
 }
 
 .biminis img {
-  width: 100%;
+  width: 90%;
   padding-bottom: 20px;
 }
 
@@ -336,7 +347,7 @@ section {
 }
 
 .right-content img {
-  width: 100%;
+  width: 90%;
 }
 
 .accessories h2 {
@@ -386,7 +397,7 @@ section {
 }
 
 .swiper-container {
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin-top: 50px;
 }
@@ -396,14 +407,14 @@ section {
 }
 
 .swiper-slide img {
-  width: 100%;
+  width: 95%;
   
 }
 
 
 /***************************************************FOOTER******************************************************************************/
 footer {
-  height: 100px;/***REMOVE THIS PROPERTY***/
+  
   width: 100%;
   background-color: #333;
   height: 400px;
@@ -476,7 +487,7 @@ footer ul {
 
   /*Fullsize background********************************/
   .fullsize-background {
-    height: 650px;
+    height: 600px;;
   }
 
   .fullsize-background h1 {
@@ -487,7 +498,7 @@ footer ul {
 
   /*Showcase cards*************************************/
   .grid-item img {
-    width: 100%;
+    width: 90%;
     height: 175px;
   }
 
@@ -497,7 +508,7 @@ footer ul {
   }
 
   .grid-item button {
-    width: 100%;
+    width: 90%;
     padding: 15px 0;
     font-size: 1rem;
     font-weight: bold;
@@ -521,16 +532,18 @@ footer ul {
   }
 
   /*logo stripe*************************************/
-  .banner img {
+  .banner_stripe img {
     width: 140px;
   }
 
-  .banner .left-stripe {
+  .banner_stripe .left-stripe {
     width: 33%;
+    margin-right: 15px;
   }
   
-  .banner .right-stripe {
+  .banner_stripe .right-stripe {
     width: 33%;
+    margin-left: 15px;
   }
 
   /*Boat manufacturers*******************************/
@@ -546,7 +559,7 @@ footer ul {
   }
 
   .boat-manufac img {
-    width: 100%;
+    width: 90%;
   }
 
   .boat-manufac .text p {
@@ -614,7 +627,7 @@ footer ul {
   }
 
   .color-selection img {
-    width: 100%;
+    width: 90%;
   }
 
   .biminis p {
@@ -636,8 +649,7 @@ footer ul {
   }
 
   .biminis .left-content img {
-    width: 100%;
-    padding: 0px 15px;
+    width: 90%;
   }
 
   .biminis .left-content {
@@ -654,7 +666,7 @@ footer ul {
   }
 
   .accessories .right-content img {
-    width: 100%;
+    width: 90%;
   }
 
   .accessories h2 {
@@ -731,9 +743,13 @@ footer ul {
 /******************************RULES FOR SCREEN WIDTHS OF 1024 OR GREATER*********************************************/
 @media screen and (min-width: 1024px) {
   /*Fullsize background***************************************/
+  .fullsize-background {
+    height: 700px;
+  }
+
   .fullsize-background h1 {
     font-size: 5rem;
-    padding: 50px 40px 0 40px;
+    padding: 100px 40px 0 40px;
   }
 
    /*Header image section*********************************************/
@@ -770,7 +786,7 @@ footer ul {
 
   /*Bimini items***********************************************/
   .color-selection img {
-    width: 100%;
+    width: 90%;
   }
 
   .text-wrapper h3 {
@@ -802,6 +818,10 @@ footer ul {
   }
 
   /*showcase section******************************/
+  .fullsize-background h1 {
+    padding-top: 125px;
+  }
+
   .header-image img {
     width: 80%;
   }
@@ -845,7 +865,7 @@ footer ul {
   }
 
   .swiper-slide {
-    width: 100%;
+    width: 90%;
   }
 }
   
@@ -857,14 +877,19 @@ footer ul {
 @media only screen  and (min-width : 1824px) {
 /* Styles */
 
-  section {
+  /* section {
     padding: 0 100px;
-  }
+  } */
 
   /*fullsize header*******************************/
+  .fullsize-background {
+    height: 100vh;
+  }
+
+
   .fullsize-background h1 {
     font-size: 6rem;
-    padding: 60px 60px;
+    padding: 150px 100px;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -873,6 +898,7 @@ footer ul {
   /*Header Img section******************************/
   .header-image img {
     width: 65%;
+    top: -350px;
   }
 
 
