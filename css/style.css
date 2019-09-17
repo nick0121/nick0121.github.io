@@ -415,11 +415,10 @@ h1, h2 {
 
 /***************************************************FOOTER******************************************************************************/
 footer {
-  
   width: 100%;
   background-color: #333;
   height: 400px;
-  position: absolute;
+  /* position: absolute; */
   color: #fff;
   padding: 10px;
   overflow-x: hidden;
