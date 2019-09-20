@@ -1,0 +1,40 @@
+/**************Styles for search bar********************/
+
+.wrap {
+    text-align: center;
+    margin-top: 150px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    color: #993300;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: transparent;
+    font-size: 17px;
+    border: 3px solid #993300;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #993300;
+    color: #fff;
+}
+
+
+.searchTerm {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 3px solid #993300;
+    border-right: none;
+    background-color: transparent;
+    border-radius: 5px 0 0 5px;
+    margin-right: -5px;
+}
